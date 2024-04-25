@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		393152E52BDA91EE0065394B /* MyListPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 393152E42BDA91EE0065394B /* MyListPackage */; };
 		396ECBCE2BD8DAC50016EE18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396ECBCD2BD8DAC50016EE18 /* AppDelegate.swift */; };
 		396ECBD02BD8DAC50016EE18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396ECBCF2BD8DAC50016EE18 /* SceneDelegate.swift */; };
 		396ECBD52BD8DAC50016EE18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 396ECBD32BD8DAC50016EE18 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				393152E52BDA91EE0065394B /* MyListPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +117,9 @@
 			dependencies = (
 			);
 			name = AppToCallPackage;
+			packageProductDependencies = (
+				393152E42BDA91EE0065394B /* MyListPackage */,
+			);
 			productName = AppToCallPackage;
 			productReference = 396ECBCA2BD8DAC50016EE18 /* AppToCallPackage.app */;
 			productType = "com.apple.product-type.application";
@@ -143,6 +148,9 @@
 				Base,
 			);
 			mainGroup = 396ECBC12BD8DAC50016EE18;
+			packageReferences = (
+				393152E32BDA91EE0065394B /* XCRemoteSwiftPackageReference "ListPackage" */,
+			);
 			productRefGroup = 396ECBCB2BD8DAC50016EE18 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -320,7 +328,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AppToCallPackage/Info.plist;
+				INFOPLIST_FILE = AppToCallPackage/Assets/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -349,7 +357,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AppToCallPackage/Info.plist;
+				INFOPLIST_FILE = AppToCallPackage/Assets/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -392,6 +400,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		393152E32BDA91EE0065394B /* XCRemoteSwiftPackageReference "ListPackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onkar-mishra/ListPackage";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		393152E42BDA91EE0065394B /* MyListPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 393152E32BDA91EE0065394B /* XCRemoteSwiftPackageReference "ListPackage" */;
+			productName = MyListPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 396ECBC22BD8DAC50016EE18 /* Project object */;
 }
